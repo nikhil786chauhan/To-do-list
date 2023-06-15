@@ -1,0 +1,75 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background:linear-gradient(320deg, #01050a, #03657e,#0c010f) ;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    justify-content: center;
+    font-family: 'Dosis',sans-serif;
+ 
+}
+.container{
+    
+    
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.212);
+        border-radius: 15px;
+        flex-basis: 450px;
+        
+        padding: 15px 20px;
+        box-shadow: 0 4px 30px rgba(35, 35, 35, 0.2);
+        min-height: 550px;
+    
+    
+}
+input{
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.753);
+    border-radius: 15px;
+    font-size: 22px;
+    width: 100%;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+
+}
+#todo-box{
+    margin-top: 10px;
+    list-style: none;
+}
+#todo-box li{
+    padding: 10px;
+    padding-right: 20px;
+    background-color:rgba(255, 255, 255, 0.575) ;
+    border-radius: 15px;
+    position: relative;
+    text-align: justify;
+    margin-top: 10px;
+    user-select: none;
+    cursor: pointer;
+    
+    
+}
+#todo-box li i{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    
+}
+.done{
+    text-decoration: line-through;
+    background-color:rgba(255, 255, 255, 0.212) !important; 
+    color: white;
+
+}
